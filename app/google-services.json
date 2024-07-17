@@ -12,7 +12,12 @@
           "package_name": "com.example.apulia2024"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDmUVmi17AuDGFb3cdr8mlU3OYyoSZ_cRU"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

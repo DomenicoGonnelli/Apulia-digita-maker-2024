@@ -1,7 +1,5 @@
 package com.example.apulia2024;
 
-
-
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
