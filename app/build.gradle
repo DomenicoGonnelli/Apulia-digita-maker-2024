@@ -1,10 +1,20 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
     namespace 'com.example.apulia2024'
     compileSdk 34
+
+    signingConfigs{
+        config{
+            storeFile file('../app/keystore/PCTOSHA1.jks')
+            storePassword 'PCTOSHA1'
+            keyAlias 'PCTOSHA1'
+            keyPassword 'PCTOSHA1'
+        }
+    }
 
     defaultConfig {
         applicationId "com.example.apulia2024"
@@ -14,12 +24,18 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
 
     buildTypes {
         release {
+            debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            debuggable true
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
@@ -29,10 +45,13 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildToolsVersion '35.0.0'
 }
 
 dependencies {
-
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.squareup.picasso:picasso:2.8'
     implementation libs.appcompat
     implementation libs.material
     implementation libs.constraintlayout
@@ -41,4 +60,5 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
 }
