@@ -1,4 +1,4 @@
-package com.example.apulia2024;
+package com.ress.apulia2024;
 
 import android.content.Context;
 

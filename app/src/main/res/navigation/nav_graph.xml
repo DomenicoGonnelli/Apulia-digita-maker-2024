@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.apulia2024.FirstFragment"
+        android:name="com.ress.apulia2024.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,12 +17,74 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.apulia2024.SecondFragment"
+        android:name="com.ress.apulia2024.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.ress.apulia2024.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_googleAuthFragment"
+            app:destination="@id/googleAuthFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_registrationFormFragment"
+            app:destination="@id/registrationFormFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_loginFormFragment"
+            app:destination="@id/loginFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleAuthFragment"
+        android:name="com.ress.apulia2024.GoogleAuthFragment"
+        android:label="fragment_google_auth"
+        tools:layout="@layout/fragment_google_auth" >
+        <action
+            android:id="@+id/action_googleAuthFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_googleAuthFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFormFragment"
+        android:name="com.ress.apulia2024.RegistrationFormFragment"
+        android:label="fragment_registration_form"
+        tools:layout="@layout/fragment_registration_form" >
+        <action
+            android:id="@+id/action_registrationFormFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_registrationFormFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFormFragment"
+        android:name="com.ress.apulia2024.LoginFormFragment"
+        android:label="fragment_login_form"
+        tools:layout="@layout/fragment_login_form" >
+        <action
+            android:id="@+id/action_loginFormFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_loginFormFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.ress.apulia2024.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 </navigation>

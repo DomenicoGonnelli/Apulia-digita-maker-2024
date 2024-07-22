@@ -4,8 +4,9 @@ plugins {
 }
 
 android {
-    namespace 'com.example.apulia2024'
-    compileSdk 34
+    namespace 'com.ress.apulia2024'
+    compileSdk 35
+    compileSdkPreview "VanillaIceCream"
 
     signingConfigs{
         config{
@@ -17,9 +18,9 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.apulia2024"
-        minSdk 24
-        targetSdk 34
+        applicationId "com.ress.apulia2024"
+        minSdk 35
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -51,12 +52,20 @@ android {
 dependencies {
     implementation platform('com.google.firebase:firebase-bom:33.1.2')
     implementation 'com.google.firebase:firebase-analytics'
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation "androidx.credentials:credentials:1.5.0-alpha02"
     implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'androidx.biometric:biometric:1.4.0-alpha01'
     implementation libs.appcompat
     implementation libs.material
     implementation libs.constraintlayout
     implementation libs.navigation.fragment
     implementation libs.navigation.ui
+    implementation libs.annotation
+    implementation libs.lifecycle.livedata.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.play.services.auth
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

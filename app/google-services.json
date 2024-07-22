@@ -7,12 +7,86 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1006638624600:android:7a75007d59d05778037f2d",
+        "android_client_info": {
+          "package_name": "com.example.appprova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmUVmi17AuDGFb3cdr8mlU3OYyoSZ_cRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1006638624600:android:793201f4fa857bb7037f2d",
         "android_client_info": {
           "package_name": "com.example.apulia2024"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1006638624600-fd4qa0m6ohm1e60dc4jjpka7qqkcnbod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apulia2024",
+            "certificate_hash": "b3bd6086f325125532bb277aefd3f3ae35a7b619"
+          }
+        },
+        {
+          "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmUVmi17AuDGFb3cdr8mlU3OYyoSZ_cRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006638624600:android:c2d4a2fda40064c0037f2d",
+        "android_client_info": {
+          "package_name": "com.ress.apulia2024"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006638624600-avus6r61alehncort8jvr4nied2hrpe5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ress.apulia2024",
+            "certificate_hash": "6436ceb196231ea4d3e60aae528dfa0a68ddec60"
+          }
+        },
         {
           "client_id": "1006638624600-kcc5ntphava7gai1nvjd735kctsod0s8.apps.googleusercontent.com",
           "client_type": 3
